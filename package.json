@@ -4,7 +4,7 @@
   "description": "記事管理のリポジトリ",
   "main": "index.js",
   "scripts": {
-    "new:article": "npx zenn new:article",
+    "zenn:new:article": "npx zenn new:article",
     "zenn:preview": "npx zenn preview"
   },
   "repository": {

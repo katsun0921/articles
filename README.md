@@ -1,3 +1,5 @@
 # articles
 
-記事管理のリポジトリ
+zenn記事管理のリポジトリ
+
+<https://zenn.dev/katsun0921>
