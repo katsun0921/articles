@@ -1,5 +1,5 @@
 ---
-title: "オリジナルフィードアプリ作成_1"
+title: "オリジナルapiまとめアプリ作成_1"
 emoji: "💨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Golang", "api"]
@@ -8,8 +8,7 @@ published: true
 
 ## 概要
 
-さまざまなwebサービスに投稿をまとめるAPIを作成しましたので、作成過程をまとめました。
-簡単な自分だけのフィードアプリです。
+これまでも記事投稿は行っていました。ただtwitter、だったりzennだったり、別のblogだったり、分散していたのでこう言った投稿を一覧できるものを作りたいと思い投稿をまとめるwebアプリを作成しましたので、作成過程をまとめました。
 
 - バックエンドはGolangを使用
 - フロントエンドはNextJsを使用
@@ -97,7 +96,7 @@ URLによって処理を振り分ける
 package app
 
 import (
-	"github.com/katsun0921/portfolio_api/controllers/ping"
+  "github.com/katsun0921/portfolio_api/controllers/ping"
 )
 
 func mapUrls() {
