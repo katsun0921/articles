@@ -191,3 +191,21 @@ func (*apisService) GetApi(api apis.Api) (*apis.Api, rest_errors.RestErr) {
 }
 
 ```
+
+## JSONを表示
+
+```bash
+curl --location --request GET 'localhost:8081/apis' | jq
+
+{
+  "title": "オリジナルフィードアプリ作成_1",
+  "description": {
+    "plain_text": "概要さまざまなwebサービスに投稿をまとめるAPIを作成しましたので、作成過程をまとめました。簡単な自分だけのフィードアプリです。バックエンドはGolangを使用フロントエンドはNextJsを使用GolangとginGolangのWebフレームワークはginを使用しました。https://github.com/gin-gonic/ginginでRESTAPIサーバーを作成今回作成したものは、他サービスからのAPIをまとめて取得するものだったので、データの取得のみバージョンgoversion...",
+    "html": "\n 概要\nさまざまなwebサービスに投稿をまとめるAPIを作成しましたので、作成過程をまとめました。\n簡単な自分だけのフィードアプリです。\n\nバックエンドはGolangを使用\nフロントエンドはNextJsを使用\n\n\n Golang とgin\nGolang のWebフレームワークはginを使用しました。\nhttps://github.com/gin-gonic/gin\n\n ginでREST APIサーバーを作成\n今回作成したものは、他サービスからのAPIをまとめて取得するものだったので、データの取得のみ\n\n バージョン\n\n      \n        \n        go version..."
+  },
+  "link": "https://zenn.dev/katsun0921/articles/portfolio_01",
+  "service": "zenn",
+  "type": "RSS",
+  "date_created": "Sun, 31 Oct 2021 13:48:27 GMT"
+}
+```
